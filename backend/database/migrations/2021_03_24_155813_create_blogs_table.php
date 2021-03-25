@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateBlogsTable extends Migration
 {
@@ -11,6 +11,7 @@ class CreateBlogsTable extends Migration
      *
      * @return void
      */
+
     public function up()
     {
         if(!Schema::hasTable('blogs')){
@@ -21,6 +22,7 @@ class CreateBlogsTable extends Migration
                 $table->timestamps();
             });
         }
+
     }
 
     /**
